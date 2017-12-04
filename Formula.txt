@@ -1,0 +1,1 @@
+=IFERROR(VLOOKUP(LEFT(INDIRECT("RC[-1]",0), 3),'\\icw\campuswide$\Collegewide Learning Resources\MDC_LR_Statistics\Discipline List\[Discipline List.xlsx]Sheet1'!$A:$B,2,FALSE), IF(ISNUMBER(INDIRECT("RC[-1]",0)), "Guest", IF(INDIRECT("RC[-1]",0)="Unspecified", "##Unspecified##", "##Not Found##")))
